@@ -59,8 +59,12 @@ While \(N > 1\):
 1. If \(N\) is prime, it is added to the factor list, and \(N\) is set to 1.
 2. Otherwise, QPE finds the order \(r\) of \(a\) modulo \(N\).
 3. If \(r\) is even, potential factors are computed using:
-   \[ \gcd(a^{r/2} - 1, N) \]  
-   \[ \gcd(a^{r/2} + 1, N) \]  
+   \[
+\gcd(a^{r/2} - 1, N)
+\]
+\[
+\gcd(a^{r/2} + 1, N)
+\]
 4. A valid factor (between 1 and \(N\)) is appended to the list, and \(N\) is divided by this factor.
 5. If no factor is found, \(a\) is incremented.
 

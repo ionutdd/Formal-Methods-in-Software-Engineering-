@@ -25,9 +25,7 @@ pip install numpy qiskit qiskit-aer
 The code is organized into several key functions:
 
 ### `modular_exponentiation(base, exponent, mod)`
-Computes $(\text{base}^{\text{exponent}}) \mod \text{mod}$
-
-efficiently using Python's `pow` function.
+Computes $(\text{base}^{\text{exponent}}) \mod \text{mod}$ efficiently using Python's `pow` function.
 
 ### `classical_multiplication_gate(mod_result)`
 Creates a 4-qubit quantum gate that applies a precomputed modular multiplication result to the work register.
@@ -61,12 +59,7 @@ While \(N > 1\):
 1. If \(N\) is prime, it is added to the factor list, and \(N\) is set to 1.
 2. Otherwise, QPE finds the order \(r\) of \(a\) modulo \(N\).
 3. If \(r\) is even, potential factors are computed using:
-   \[
-\gcd(a^{r/2} - 1, N)
-\]
-\[
-\gcd(a^{r/2} + 1, N)
-\]
+$\gcd(a^{r/2} - 1, N)$ and $\gcd(a^{r/2} + 1, N)$
 4. A valid factor (between 1 and \(N\)) is appended to the list, and \(N\) is divided by this factor.
 5. If no factor is found, \(a\) is incremented.
 

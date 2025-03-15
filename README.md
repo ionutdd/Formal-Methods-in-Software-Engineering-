@@ -25,9 +25,8 @@ pip install numpy qiskit qiskit-aer
 The code is organized into several key functions:
 
 ### `modular_exponentiation(base, exponent, mod)`
-Computes \[
-(\text{base}^{\text{exponent}}) \mod \text{mod}
-\]
+Computes $(\text{base}^{\text{exponent}}) \mod \text{mod}$
+
 efficiently using Python's `pow` function.
 
 ### `classical_multiplication_gate(mod_result)`

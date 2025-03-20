@@ -25,7 +25,7 @@ pip install numpy qiskit qiskit-aer
 The code is organized into several key functions:
 
 ### `modular_exponentiation(base, exponent, mod)`
-Computes $(\text{base}^{\text{exponent}}) \mod \text{mod}$ efficiently using Python's `pow` function.
+Computes $(\text{base}^{\text{exponent}}) \mod$ efficiently using Python's `pow` function.
 
 ### `classical_multiplication_gate(mod_result)`
 Creates a 4-qubit quantum gate that applies a precomputed modular multiplication result to the work register.
